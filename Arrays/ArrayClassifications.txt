@@ -1,0 +1,38 @@
+==============================================
+1. Mutation Methods (modify original array)
+==============================================
+push()        → adds element(s) to end
+pop()         → removes last element
+shift()       → removes first element
+unshift()     → adds element(s) to start
+splice()      → add/remove/replace elements
+sort()        → sorts array (in-place)
+reverse()     → reverses array (in-place)
+fill()        → fills elements with value
+copyWithin()  → copies part of array within itself
+
+====================================================
+2. Non-Mutation Methods (do NOT modify original array)
+====================================================
+map()
+filter() ---- done
+slice()  ---- done
+concat()-----done
+flat()
+flatMap()
+
+========================================================
+✅ Methods returning single values (no modification)         ----------Pending
+========================================================
+find()
+findIndex()
+includes()
+indexOf()
+lastIndexOf()
+some()
+every()
+join()
+toString()
+at()
+reduce()
+reduceRight()

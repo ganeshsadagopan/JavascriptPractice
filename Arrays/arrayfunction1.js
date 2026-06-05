@@ -5,6 +5,7 @@ let data=Array("sachin","shewag","virat","rohit","dhoni")
 
 console.log(data)
 var value= data.slice(1,3)
+// slice(1,3) extracts elements from index 1 to 2 (end index is excluded), returns a new array without modifying the original
 console.log(value)
 
 
