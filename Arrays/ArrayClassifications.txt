@@ -12,9 +12,9 @@ fill()        → fills elements with value
 copyWithin()  → copies part of array within itself
 
 ====================================================
-2. Non-Mutation Methods (do NOT modify original array)
+2. Non-Mutation Methods (do NOT modify original array) - returns new Array
 ====================================================
-map()
+map() -------done
 filter() ---- done
 slice()  ---- done
 concat()-----done
