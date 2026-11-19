@@ -12,26 +12,52 @@ let b=[1,2,3,4,5,6,7,8,9,10]
 let evenNumbers = b.filter(num => num % 2 === 0);
 console.log(evenNumbers);
 
+// 3. Filter odd numbers
+console.log("\n===== Filter Odd Numbers =====");
+let c=[1,2,3,4,5,6,7,8,9,10]
+let oddNumbers = c.filter(num => num % 2 !== 0);
+console.log("Odd numbers:", oddNumbers);
+// filters array to return only odd numbers
 
-// Sample program using reduce function
-// Sum all numbers in the array b
-let sum = b.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log("Sum using reduce:", sum);
+// 4. Filter numbers greater than threshold
+console.log("\n===== Filter Numbers > Threshold =====");
+let d=[5, 15, 10, 25, 8, 30, 12]
+let greaterThan15 = d.filter(num => num > 15);
+console.log("Numbers > 15:", greaterThan15);
+// filters numbers greater than 15
 
-// Create an object counting even and odd numbers using reduce
-let count = b.reduce((acc, num) => {
-	if (num % 2 === 0) acc.even++;
-	else acc.odd++;
-	return acc;
-}, { even: 0, odd: 0 });
-console.log("Even and odd count using reduce:", count);
+// 5. Filter objects by property
+console.log("\n===== Filter Objects by Property =====");
+let students = [
+  {name: "Sachin", age: 20},
+  {name: "Virat", age: 18},
+  {name: "Rohit", age: 22},
+  {name: "Dhoni", age: 25}
+];
+let adults = students.filter(student => student.age >= 21);
+console.log("Adults (age >= 21):", adults);
+// filters student objects where age is 21 or more
 
-//-------------------------------------------------------------------
-let a1 = [88, 50, 25, 10];
-let sub = a1.reduce(geeks,0);
+// 6. Filter out null/undefined values
+console.log("\n===== Filter Out Null/Undefined =====");
+let values = [10, null, 20, undefined, 30, '', 40];
+let validValues = values.filter(val => val !== null && val !== undefined && val !== '');
+console.log("Valid values:", validValues);
+// removes null, undefined, and empty string values
 
-function geeks(tot, num) {
-    console.log(tot, num);
-    return tot - num;
-}
-console.log(sub);
+// 7. Filter strings by length
+console.log("\n===== Filter Strings by Length =====");
+let words = ["JavaScript", "React", "Node", "CSS", "HTML", "TypeScript"];
+let longWords = words.filter(word => word.length > 4);
+console.log("Words with length > 4:", longWords);
+// filters strings that have more than 4 characters
+
+// 8. Filter and chain methods
+console.log("\n===== Filter with Map Chain =====");
+let numbers = [1, 2, 3, 4, 5, 6];
+let result = numbers
+  .filter(num => num > 2)
+  .map(num => num * 2);
+console.log("Filtered > 2, then doubled:", result);
+// filters numbers > 2, then multiplies each by 2
+
