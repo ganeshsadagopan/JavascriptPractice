@@ -135,4 +135,4 @@ console.log("Logical: &&, ||, !");
 console.log("String: +, `` (template literals)");
 console.log("Conditional: ? :");
 console.log("Type: typeof");
-console.log("Bitwise: &, |, ^, ~, <<, >>");
+console.log("Bitwise: &, |, ^, ~, <<, >>")

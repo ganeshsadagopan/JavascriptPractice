@@ -18,6 +18,14 @@ else if(10>5){
     console.log("10 is greater than 5")
 }
 
+// Example of do...while loop in JavaScript
+let i = 0;
+do {
+    console.log("do...while example, i = " + i);
+    i++;
+} while (i < 3);
+// This will print the value of i from 0 to 2
+
 
 
 for(let k=0;k<10;k++)

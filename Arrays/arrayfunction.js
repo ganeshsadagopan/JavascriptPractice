@@ -13,7 +13,8 @@ console.log(a)
 // The push() method adds a new element to the end of the array.
 
 
-a.shift()
+//a.shift()
+console.log(a.shift())
 console.log(a)
 // The shift() method removes the first element from the array and returns that element.
 
